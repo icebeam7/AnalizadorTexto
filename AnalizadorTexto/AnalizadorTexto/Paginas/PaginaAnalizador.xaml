@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalizadorTexto.Paginas.PaginaAnalizador">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="10">
+            <Label Text="Texto" TextColor="Blue" FontSize="Large"/>
+
+            <Entry x:Name="MessageEntry" TextColor="White" Placeholder="Texto..." 
+                   PlaceholderColor="LightGray" BackgroundColor="Black" FontSize="Medium"/>
+
+            <Button x:Name="AnalyzeButton" Text="Analizar" TextColor="White"
+                        BackgroundColor="#0072BD" FontSize="Medium" Clicked="AnalyzeButton_Clicked"/>
+
+            <ActivityIndicator x:Name="indicator" Color="Green" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label Text="Score" FontSize="Large" TextColor="Gray"/>
+            <Label x:Name="ScoreLabel" Text="0.00" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
